@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Erika Website</title>
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erika Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="IMG_20240317_011330.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="register-box">
+        <form id="msform" class="form">
+            <ul id="progressbar">
+                <li class="active">Account Setup</li>
+                <li>Personal Details</li>
+                <li>Social Profiles</li>
+            </ul>
+            <fieldset>
+                    <h2 class="fs-title">Create your account</h2>
+                    <h3 class="fs-subtitle">Please fill below</h3>
+                    <input type="text" name="email" placeholder="Email"/><br>
+                    <input type="password" name="pass" placeholder="Password"/><br>
+                    <input type="password" name="cpass" placeholder="Confirm Password"/><br>
+                    <input type="button" name="next" class="next action-button" value="Next"/>
+            </fieldset> 
+            <fieldset>
+                <h2 class="fs-title">Personal Details</h2>
+                <h3 class="fs-subtitle">We will never sell it</h3>
+                <input type="text" name="fname" placeholder="First Name"/><br>
+                <input type="text" name="lname" placeholder="Last Name"/><br>
+                Birth Date <input type="date" name="date"/><br>
+                <input type="button" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">Social Profiles</h2>
+                <h3 class="fs-subtitle">Your presence on the social network</h3>
+                <input type="text" placeholder="Instagram"/><br>
+                <input type="text" placeholder="Github" /><br>
+                <input type="text" placeholder="Phone Number" /><br>
+                <input type="button"class="next action-button" value="Submit" />
+            </fieldset>
+        </form>
+    </div>
+</body>
 </html>
