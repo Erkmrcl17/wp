@@ -1,19 +1,15 @@
 <html>
 <body>
-<button onclick="job1()">Click!</button>
-<script>
-function job1() {
-    width += 10
-    b.style = `position:${position};left:${left};top:${top1};height:${height};width:${width}`
-}
+    <button id="pressButton">Click Me!</button>
+    <script>
+        const pressButton = document.getElementById('pressButton');
 
-let left = 100
-let top1 = 100
-let height = 50
-let width = 100
-let position = 'absolute'
-let b = document.querySelector('button')
-b.style = `position:${position};left:${left};top:${top1};height:${height};width:${width}`
+        pressButton.addEventListener('click', function() {
+            const currentFontSize = parseInt(window.getComputedStyle(this).fontSize);
+            const newFontSize = currentFontSize + 2; // Mengatur penambahan ukuran font setiap kali tombol ditekan
+            this.style.fontSize = newFontSize + 'px';
+        });
+
 </script>
 </body>
 </html>
