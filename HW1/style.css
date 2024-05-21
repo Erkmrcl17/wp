@@ -967,7 +967,7 @@ main {
 
 
   .clients-item { min-width: calc(25% - 38px); }
-
+}
 
 @media (min-width: 1250px) {
 
